@@ -1,0 +1,141 @@
+.product-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.product-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 210px;
+  transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  
+}
+.product-image-bid {
+  width: 35%;
+  
+}
+.product-details {
+  margin-top: 10px;
+}
+
+.product-name {
+  font-size: 16px;
+ 
+}
+
+.product-prices {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.product-price-new {
+  color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.product-price-old {
+  color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.bid-btn,
+.bid-placed-btn,
+.confirm-bid-btn,
+.cancel-btn {
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bid-btn:hover,
+.confirm-bid-btn:hover {
+  background-color: #00796b;
+}
+
+.bid-placed-btn {
+  background-color: #757575;
+  cursor: not-allowed;
+  align-items: center;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width:fit-content;
+  max-height: fit-content;
+  
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bid-form {
+  text-align: center;
+}
+
+.bid-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  margin-left: 10px;
+  background-color: #f44336;
+}
+
+.error {
+  color: #c00;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.modal-content button:first-of-type {
+  background-color: #f44336; /* Red color for close button */
+  color: white;
+}
+
+.modal-content button:first-of-type:hover {
+  background-color: #d32f2f; /* Darker shade of red on hover */
+}

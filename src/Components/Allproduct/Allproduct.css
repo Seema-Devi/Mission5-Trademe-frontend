@@ -1,0 +1,102 @@
+/* General styles for the product container */
+.allproduct {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 10px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Styles for the product items */
+.allproduct-item {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+    .allproduct h1 {
+        font-size: 30px;
+    }
+    .allproduct hr {
+        width: 80px;
+        height: 4px;
+    }
+}
+
+/* Modal styles */
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+    z-index: 1000; /* Ensure modal is on top of other content */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    animation: fadeIn 0.3s ease-out; /* Fade-in animation */
+}
+
+.modal-content p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #2980b9; /* Lighter blue on hover */
+}
+
+.modal-content button:first-of-type {
+    background-color: #f44336; /* Red color for close button */
+    color: white;
+}
+
+.modal-content button:last-of-type {
+    background-color: #2980b9; /* Blue color for compare button */
+    color: white;
+    margin-left: 10px;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.modal-content button:first-of-type {
+    background-color: #f44336; /* Red color for close button */
+    color: white;
+}
+
+.modal-content button:first-of-type:hover {
+    background-color: #d32f2f; /* Darker shade of red on hover */
+}

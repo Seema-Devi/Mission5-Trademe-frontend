@@ -1,0 +1,81 @@
+.item {
+    width: 21%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.item img {
+    width: 100%;
+}
+
+.item p {
+    margin: 6px 0px;
+}
+
+.item-prices {
+    display: flex;
+    gap: 15px;
+}
+
+.item-price-new {
+    color: #374151;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.item-price-old {
+    color: #8c8c8c;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item button {
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+    background-color: #1c6fa9;
+}
+
+@media (max-width: 800px) {
+    .item {
+        width: 35%;
+    }
+
+    .item-price-old {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .item p {
+        font-size: 14px;
+    }
+
+    .item-price-new {
+        font-size: 14px;
+    }
+}
+.modal-content button:first-of-type {
+    background-color: #f44336; /* Red color for close button */
+    color: white;
+}
+
+.modal-content button:first-of-type:hover {
+    background-color: #d32f2f; /* Darker shade of red on hover */
+}

@@ -1,0 +1,67 @@
+.item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .item p {
+    margin: 10px 0;
+  }
+  
+  .item-prices {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-price-new,
+  .item-price-old {
+    margin-right: 10px;
+  }
+  
+  .buttons-container {
+    margin-top: 10px;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    margin-bottom: 10px;
+  }
+  
+  .close-btn {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .close-btn:hover {
+    background-color: #f44336;
+  }
+  .buttons-container {
+    margin-top: 10px;
+  }
+  
+  .buttons-container button {
+    margin-right: 10px; /* Adjust this value to change the gap between buttons */
+  }
+  

@@ -1,0 +1,56 @@
+.hero{
+    min-height: 10px;
+    background:  rgb(0, 140, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+
+.hero-left h3{
+    color:lightpink;
+    font-size: 40px;
+    font-style: bold;
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+.input {
+    width: 700px; 
+    height: 30px; 
+    padding: 5px; 
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }
+
+.button{
+    background-color:grey; 
+  color: #fff; 
+  padding: 13px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+}
+
+
+@media(max-width:1200px){
+    
+    .hero{
+        padding: 10px 5%;
+    }
+}
+
+@media(max-width:700px){
+   .hero{
+    padding: 0 10%;
+   }
+      
+    .hero-left{
+        line-height: 1.2;
+    }
+    .hero-left h3{
+        margin-bottom: 20px;
+    }
+  
+}
+
